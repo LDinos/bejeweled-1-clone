@@ -1,0 +1,11 @@
+x = obj_board.x + ((GRID*8)/2) - sprite_width/2
+y = obj_board.y + ((GRID*8)/2) - sprite_height/2
+dragging_slider = 0
+slider_alpha[0] = global.VolMus //how full is the slider (0 to 1)
+slider_alpha[1] = global.VolFX //how full is the slider (0 to 1)
+slider_y[0] = y+132 //at which height
+slider_y[1] = y+196 //at which height
+slider_sound_type[0] = audiogroup_music
+slider_sound_type[1] = audiogroup_default
+slider_x_start = 278+32 //at which x point is slider equal to 0
+slider_x_end = 608+16 //at which x point is slider equal to 1
