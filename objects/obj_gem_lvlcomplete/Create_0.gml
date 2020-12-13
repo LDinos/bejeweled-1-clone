@@ -1,4 +1,5 @@
 /// @description Gems that warp around the center
+sprite_width_start = sprite_width 
 image_speed = 0 //don't animate
 image_xscale = GRID/sprite_width //Fit exactly in one square
 image_yscale = image_xscale
