@@ -19,6 +19,8 @@ function load_autosave(){
 	score = settings[? "points"]
 	obj_levelbar.prev_level_points = settings[? "prev_level_points"]
 	global.late_score = score
+	if (global.mode == "timetrial") obj_levelbar.lost_points = settings[? "lost_points"]
 	color_index = settings[? "color_index"]
 	image_index = settings[? "image_index"]
+	ds_map_destroy(settings)
 }
