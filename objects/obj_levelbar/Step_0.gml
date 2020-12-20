@@ -7,5 +7,5 @@ if !global.paused
 		else global.late_score += sign(score_dif)*global.level
 	}
 
-	level_points = global.late_score-prev_level_points
+	level_points = global.late_score-prev_level_points + lost_points
 }

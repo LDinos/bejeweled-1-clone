@@ -2,7 +2,7 @@
 level_bar_anim += 0.01
 with(obj_levelbar)
 {
-	level_complete_deplete_anim = lerp(1,0,other.level_bar_anim)
+	level_complete_deplete_anim = lerp(1,0 + 0.5*(global.mode=="timetrial"),other.level_bar_anim)
 	image_speed = 0
 	image_index = 0
 }
