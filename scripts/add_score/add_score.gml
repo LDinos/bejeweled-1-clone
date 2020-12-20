@@ -1,5 +1,6 @@
 function add_score(score_x,score_y,score_var){
 	var s = instance_create_depth(score_x,score_y,DEPTH_BACKGROUND_UI,obj_score)
+	score_var = score_var + 10*(global.mode=="timetrial")
 	s.str = string(score_var)
 	score += score_var
 	global.combo_points += score_var

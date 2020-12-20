@@ -5,6 +5,7 @@ function autosave(mode){
 	ds_map_add(settings,"level",global.level)
 	ds_map_add(settings,"points",score)
 	ds_map_add(settings,"prev_level_points",obj_levelbar.prev_level_points)
+	if (global.mode == "timetrial") ds_map_add(settings,"lost_points",obj_levelbar.lost_points)
 	ds_map_add(settings,"points_needed",global.points_needed)
 	ds_map_add(settings,"points_addup",global.points_addup)
 	ds_map_add(settings,"color_index",obj_board.color_index)
