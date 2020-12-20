@@ -80,6 +80,7 @@
     {"id":{"name":"snd_warning","path":"sounds/snd_warning/snd_warning.yy",},"order":23,},
     {"id":{"name":"anim_swap","path":"animcurves/anim_swap/anim_swap.yy",},"order":0,},
     {"id":{"name":"spr_gem2","path":"sprites/spr_gem2/spr_gem2.yy",},"order":2,},
+    {"id":{"name":"Script23","path":"scripts/Script23/Script23.yy",},"order":18,},
     {"id":{"name":"obj_text_fancy","path":"objects/obj_text_fancy/obj_text_fancy.yy",},"order":17,},
     {"id":{"name":"obj_button_normal","path":"objects/obj_button_normal/obj_button_normal.yy",},"order":0,},
     {"id":{"name":"shuffle_board","path":"scripts/shuffle_board/shuffle_board.yy",},"order":17,},
