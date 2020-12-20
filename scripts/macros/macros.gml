@@ -23,3 +23,6 @@
 #macro c_lightgreen make_color_rgb(200,225,157)
 #macro c_lightblue make_color_rgb(0,205,136)
 #macro c_buttonblue make_color_rgb(32,70,126)
+
+
+#macro device_html5 (os_browser != browser_not_a_browser)
