@@ -1,11 +1,14 @@
+// Drawing covers for outside of the board, for non-proportional screens
 var cx = camera_get_view_x(view_camera[0])
 var cy = camera_get_view_y(view_camera[0])
 var sx = cx+camera_get_view_width(view_camera[0])
 var sy = cy+camera_get_view_height(view_camera[0])
 draw_rectangle_color(cx,cy,0,sy,0,0,0,0,0);
 draw_rectangle_color(720,cy,sx,sy,0,0,0,0,0);
-draw_sprite_stretched(spr_platform,0,0,cy,720,-cy+4)
-draw_sprite_stretched(spr_platform,1,0,1276,720,sy-1280)
+draw_sprite_stretched(spr_platform,0,0,cy,720,-cy+4);
+draw_sprite_stretched(spr_platform,1,0,1276,720,sy-1280);
+
+
 /// @description
 draw_self()
 

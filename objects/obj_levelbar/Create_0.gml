@@ -6,5 +6,3 @@ level_points = 0 //Current bar points. Always ranges from 0 to (global.points_ne
 prev_level_points = 0 //The points we had at the end of the previous level
 depth = DEPTH_BACKGROUND_UI-1
 lost_points = 0 //Points depleted in timetrial. At beginning of level, value's equal to half of the bar
-color_green = animcurve_get_channel(anim_bar_color,"G")
-color_red = animcurve_get_channel(anim_bar_color,"R")

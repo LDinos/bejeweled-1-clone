@@ -20,7 +20,9 @@ else
 		{
 			autosave(global.mode); 
 			global.gems_are_stable = true;
-			if (global.mode == "timetrial") with(obj_levelbar) alarm[0] = 15 + ceil(60/global.level) //deplete
+			if (global.mode == "timetrial") 
+				with(obj_levelbar) 
+					alarm[0] = 15 + ceil(60/global.level) //deplete
 		} 
 		else //NO MORE MOVES
 		{
@@ -34,6 +36,7 @@ else
 					g.sprite_index = sprite_index
 					instance_destroy(id,false) //destroy normal gem
 				}
+				create_fancy_text("NO MOVES!")
 				alarm[1] = 90 //do the explosion sfx
 			}
 			else 
