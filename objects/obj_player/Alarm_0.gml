@@ -15,7 +15,7 @@ else
 	}
 	else //if we had no matches (either after gems drop from cascade or from an illegal swap-back)
 	{
-		if (score >= global.points_needed) {instance_create_depth(0,0,depth,obj_levelcomplete); with(obj_levelbar) alarm[0] = -1} //check if we completed the level
+		if (obj_levelbar.level_points >= global.points_needed) {instance_create_depth(0,0,depth,obj_levelcomplete); with(obj_levelbar) alarm[0] = -1} //check if we completed the level
 		else if find_possible_moves(true) //check if we have a board with possible moves
 		{
 			autosave(global.mode); 
@@ -26,6 +26,7 @@ else
 		{
 			if global.mode == "normal"
 			{
+				create_fancy_text("NO MOVES!")
 				global.gameover = true;
 				file_delete("autosave_"+global.mode)
 				with(obj_gem)

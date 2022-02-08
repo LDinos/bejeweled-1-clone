@@ -1,5 +1,5 @@
 /// @description
-var completion = ((level_points)/(global.points_needed-prev_level_points+lost_points))
+var completion = (level_points_late/global.points_needed)
 if (completion > 1) completion = 1
 if (level_complete_deplete_anim < 1) completion = level_complete_deplete_anim
 if (global.mode != "timetrial") || (completion == 1) //if it's normal

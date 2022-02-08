@@ -15,11 +15,13 @@ function load_autosave(){
 	}
 	global.level = settings[? "level"]
 	global.points_addup = settings[? "points_addup"]
-	global.points_needed = settings[? "points_needed"]
 	score = settings[? "points"]
-	obj_levelbar.prev_level_points = settings[? "prev_level_points"]
 	global.late_score = score
-	if (global.mode == "timetrial") obj_levelbar.lost_points = settings[? "lost_points"]
+	obj_levelbar.level_points = settings[? "level_points"]
+	obj_levelbar.level_points_late = obj_levelbar.level_points
+	global.points_needed = global.points_addup*(50 + 15*(global.level-1))
+	if (global.mode == "timetrial") global.points_needed *= 2
+	//if (global.mode == "timetrial") obj_levelbar.lost_points = settings[? "lost_points"]
 	color_index = settings[? "color_index"]
 	image_index = settings[? "image_index"]
 	ds_map_destroy(settings)

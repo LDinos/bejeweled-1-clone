@@ -1,5 +1,5 @@
 /// @description Deplete bar
-if (!global.paused) lost_points -= global.level*(global.points_addup/5)
+if (!global.paused) level_points -= global.level*(global.points_addup/5)
 if (level_points <= 0) && (global.gems_are_stable) 
 {
 	alarm[0] = -1; 

@@ -3,6 +3,7 @@ function add_score(score_x,score_y,score_var){
 	score_var = score_var + 10*(global.mode=="timetrial")
 	s.str = string(score_var)
 	score += score_var
+	obj_levelbar.level_points += score_var
 	global.combo_points += score_var
 	with(obj_hint) 
 	{ 	

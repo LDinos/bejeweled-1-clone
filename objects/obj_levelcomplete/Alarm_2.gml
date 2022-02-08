@@ -9,7 +9,7 @@ with(obj_levelbar)
 if (level_bar_anim != 1) alarm[2] = 1
 else
 {
-	obj_levelbar.prev_level_points = score
+	//obj_levelbar.prev_level_points = score
 	obj_levelbar.level_complete_deplete_anim = 1 //reset depletion alpha
 	create_fancy_text("LEVEL " + string(global.level+1))
 	calculate_level_points(global.level+1)	

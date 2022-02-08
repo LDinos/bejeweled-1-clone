@@ -7,7 +7,9 @@ if global.gems_are_stable && cooldown == 0 && !global.paused
 	if (g != noone)
 	{
 		score -= 5*global.points_addup
+		obj_levelbar.level_points -= 5*global.points_addup
 		if (score < 0) score = 0
+		if (obj_levelbar.level_points < 0) obj_levelbar.level_points = 0
 		instance_create_depth(g.x,g.y,g.depth-1,obj_hint_sparkles)
 	}
 }

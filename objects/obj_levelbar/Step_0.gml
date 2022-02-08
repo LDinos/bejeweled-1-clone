@@ -1,11 +1,5 @@
 if !global.paused
 {
-	if (score != global.late_score)
-	{
-		var score_dif = score - global.late_score
-		if (abs(score_dif) < sign(score_dif)*global.level) global.late_score = score
-		else global.late_score += sign(score_dif)*global.level
-	}
-
-	level_points = global.late_score-prev_level_points + lost_points
+	level_points_late = points_catch_up(level_points, level_points_late)
+	global.late_score = points_catch_up(score, global.late_score)
 }
